@@ -1,0 +1,62 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.6deb1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 28, 2013 at 08:24 PM
+-- Server version: 5.5.34-0ubuntu0.13.10.1
+-- PHP Version: 5.5.3-1ubuntu2.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `attend`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `main`
+--
+
+CREATE TABLE IF NOT EXISTS `main` (
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `rfid` varchar(32) CHARACTER SET utf8 NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `rfid` (`rfid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `main`
+--
+
+INSERT INTO `main` (`date`, `id`, `rfid`) VALUES
+('2013-12-28 18:17:03', 1, '0008088232'),
+('2013-12-28 18:21:48', 2, '0008088232'),
+('2013-12-28 18:25:59', 3, '0008088232'),
+('2013-12-28 19:13:04', 4, '0003426563'),
+('2013-12-28 19:14:07', 5, '0008088232'),
+('2013-12-28 19:14:41', 6, '0008088232'),
+('2013-12-28 19:17:59', 7, '0003426563'),
+('2013-12-28 19:18:17', 8, '0008088232'),
+('2013-12-28 19:23:23', 9, '0003426563'),
+('2013-12-28 19:23:29', 10, '0008088232'),
+('2013-12-28 19:23:36', 11, '0003426563'),
+('2013-12-28 19:23:43', 12, '0003426563'),
+('2013-12-28 19:24:12', 13, '0003426563'),
+('2013-12-28 19:24:39', 14, '0003426563'),
+('2013-12-28 19:24:54', 15, '0008088232'),
+('2013-12-28 19:30:51', 16, '0003426563'),
+('2013-12-28 19:33:42', 17, '0003426563');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
